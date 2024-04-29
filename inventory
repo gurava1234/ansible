@@ -1,5 +1,7 @@
 3.85.53.135
 
+localhost ansible_connection=local
+
 [web]
 3.85.53.135
 192.187.56.4
