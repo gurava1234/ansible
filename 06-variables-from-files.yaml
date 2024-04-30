@@ -1,0 +1,10 @@
+- name: variables from PLAY level
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  tasks:
+    - name: check variables
+      vars: # Task-level variables
+        course: "Devops with aws"  # This overrides the 'course' variable within this task
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ course }}, learner is {{ learner }}, duration is {{ duration }}"
