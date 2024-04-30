@@ -6,7 +6,7 @@
   - name: print persons
     ansible.builtin.packages:
       name: "{{item}}"
-      status: present
+      state: present
     loop:
       - git
       - mysql 
