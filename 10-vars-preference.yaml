@@ -1,6 +1,6 @@
 - name: Variables from PLAY level
   hosts: localhost
-  vrs_files:
+  vars_files:
   - variables.yaml
   vars_prompt:
   - name: PERSON
