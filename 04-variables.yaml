@@ -1,12 +1,13 @@
-- name: variables from PLAY level
+- name: Variables from PLAY level
   hosts: localhost
   vars:
-   course: "DevOps"
-   learner: "guru"
-   Duration: "110hrs"
+    course: "DevOps"
+    learner: "guru"
+    duration: "110hrs"  # Ensure consistent casing for variable names
   tasks:
- - name: check variables
-    ansible.builtin.debug:
-     msg: "Hi I am learning {{course}},learner is {{learner}}, duration is {{duration}}"
+    - name: Check variables
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ course }}, the learner is {{ learner }}, and the duration is {{ duration }}."
+
 
 
