@@ -1,6 +1,7 @@
 
 - name: loops
-  hosts: localhost  # Corrected from 'localhosts' to 'localhost'
+  hosts: localhost 
+  become: yes  # Corrected from 'localhosts' to 'localhost'
   tasks:  # Corrected typo from 'taks' to 'tasks'
   - name: print persons
     ansible.builtin.packages:
