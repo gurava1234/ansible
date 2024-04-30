@@ -1,6 +1,5 @@
 - name: PLAY-1
   hosts: localhost
-  gather_facts: no
   tasks:
     - name: TASK-1
       ansible.builtin.debug:
@@ -8,7 +7,6 @@
 
 - name: PLAY-2
   hosts: localhost
-  gather_facts: no
   tasks:
     - name: TASK-2
       ansible.builtin.debug:
