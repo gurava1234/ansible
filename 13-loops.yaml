@@ -3,12 +3,12 @@
   hosts: localhost  # Corrected from 'localhosts' to 'localhost'
   tasks:  # Corrected typo from 'taks' to 'tasks'
   - name: print persons
-    ansible.builtin.debug:
-      msg: "Hello {{ item }}"  # Ensures proper variable interpolation
+    ansible.builtin.packages:
+      name: "{{item}}"
+      status: present
     loop:
-      - ramesh
-      - suresh  # Fixed indentation issue and removed erroneous dash
-      - robert
-      - raheem
+      - git
+      - mysql 
+      - postfix
 
 
