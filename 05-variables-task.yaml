@@ -2,14 +2,13 @@
 - name: variables from PLAY level
   hosts: localhost
   vars:
-   course: "DevOps"
-   learner: "guru"
-   Duration: "110hrs"
+    course: "DevOps"  # Keep variable names consistently lowercase
+    learner: "guru"
+    duration: "110hrs"  # Changed from 'Duration' to 'duration' for consistency
   tasks:
- - name: check variables
-   vars: #task level
-     course: "Devops with aws"
-   ansible.builtin.debug:
-     msg: "Hi, I am learning {{course}}, learner is {{learner}}, duration is {{duration}}"
-
+    - name: check variables
+      vars: # Task-level variables
+        course: "Devops with aws"  # This overrides the 'course' variable within this task
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ course }}, learner is {{ learner }}, duration is {{ duration }}"
 
