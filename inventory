@@ -3,6 +3,16 @@
 [web]
 54.226.189.179
 
+[local host]
+localhost
+
+[localhost:vars]
+course="DevOps from inventory"
+learner="guru"
+Duration="110 hrs"
+
+
+
 [catalogue]
 192.187.56.5
 192.187.56.6
