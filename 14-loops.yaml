@@ -1,0 +1,16 @@
+- name: loops
+  hosts: localhost
+  become: yes  
+  tasks:
+  - name: ensure packages are installed
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+      - git
+      - mysql
+      - postfix
+
+
+
+
