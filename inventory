@@ -1,9 +1,7 @@
 3.85.53.135
 
-localhost ansible_connection=local
-
 [web]
-3.80.122.57
+54.226.189.179
 
 [catalogue]
 192.187.56.5
